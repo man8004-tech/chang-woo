@@ -164,15 +164,18 @@
             padding: 20px;
             font-size: 0.9rem;
         }
-    </style>
+    
+html{scroll-behavior:smooth;scroll-padding-top:85px}*{box-sizing:border-box}body{background:#f3f6fb;color:#24334a}a{color:#0756ad}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #efaf27;outline-offset:4px}.nav{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #dae3ef}.nav-inner{max-width:1120px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:18px 24px;gap:18px}.brand{font-size:23px;font-weight:900;text-decoration:none;color:#12385d}.nav-links{display:flex;gap:22px;flex-wrap:wrap}.nav-links a{text-decoration:none;font-size:14px;font-weight:bold}header{position:relative;overflow:hidden;text-align:left;padding:90px max(24px,calc((100vw - 1072px)/2));background:radial-gradient(ellipse at 85% 20%,#237f9b 0,transparent 45%),linear-gradient(125deg,#102d50,#075ca0);min-height:390px}header:after{content:'';position:absolute;width:330px;height:330px;border:50px solid #ffffff10;border-radius:50%;right:-70px;bottom:-190px;pointer-events:none}header p{color:#a7e0ff;font-size:15px}header h1{font-size:clamp(30px,4vw,49px);max-width:780px;line-height:1.35;letter-spacing:-2px}header .subtitle{max-width:680px;color:#e4effb;margin:20px 0 28px}.hero-link,.action{display:inline-block;padding:12px 22px;border-radius:8px;background:white;color:#064c87;font-weight:bold;text-decoration:none}.hero-link.secondary{background:#ffffff14;color:white;border:1px solid #ffffff55;margin-left:8px}.container{max-width:1120px;padding:46px 24px}section{background:white;padding:28px;margin-bottom:24px;border:1px solid #e0e7f0;border-radius:16px;box-shadow:0 5px 22px #16365b04}h2{font-size:23px;margin-top:0}.section-note{color:#62758a;font-size:14px}.education-list li{padding:17px;background:#f0f6fc}.info-box{padding:22px;background:#f4f7fb;border-radius:10px}.contact-box{border:0;background:#edf5ff;padding:28px}.btn-call{border-radius:8px;background:#075bbb;font-size:17px}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.gallery figure{margin:0;border:1px solid #dde6ef;border-radius:12px;overflow:hidden}.photo-slot{height:190px;background:linear-gradient(135deg,#e2edf8,#c5dcee);display:flex;align-items:center;justify-content:center;flex-direction:column;color:#426381;gap:8px}.photo-slot b{font-size:36px;font-weight:400}.photo-slot span{font-size:13px}.gallery figcaption{padding:18px;font-weight:bold}.gallery figcaption small{display:block;font-weight:normal;color:#61748a;margin-top:6px}.photo-slot img{width:100%;height:100%;object-fit:cover}details{border-bottom:1px solid #e1e8ef;padding:17px 0}details:last-child{border:0}summary{cursor:pointer;font-weight:bold;padding-right:12px}details p{color:#52677d;line-height:1.8}.pill{background:#e7f1fc;color:#0756ad;font-size:12px;padding:4px 8px;border-radius:4px;margin-right:10px}.contact-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:12px}.contact-actions a{padding:10px 18px;border:1px solid #bfd3eb;border-radius:7px;text-decoration:none;background:white;font-weight:bold}footer{background:#102b48;padding:30px 20px}.to-top{position:fixed;right:18px;bottom:20px;padding:12px 16px;border-radius:24px;background:#123e6b;color:white;text-decoration:none;box-shadow:0 3px 15px #0002;font-size:14px}@media(max-width:650px){.nav-inner{align-items:flex-start;flex-direction:column;padding:12px 20px;gap:7px}.nav-links{gap:14px}.nav-links a{font-size:12px}header{padding:52px 22px}header .subtitle{font-size:16px}.container{padding:24px 14px}section{padding:23px 19px}.gallery{grid-template-columns:1fr}.photo-slot{height:200px}.contact-box{padding:18px 12px}.contact-box p{overflow-wrap:anywhere;font-size:15px}.hero-link{font-size:14px;padding:10px 15px}html{scroll-padding-top:115px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
 </head>
-<body>
+<body id="top">
+<nav class="nav" aria-label="주 메뉴"><div class="nav-inner"><a class="brand" href="#top">창우전자<span style="font-size:12px;color:#71869d;margin-left:10px">기술교육 · 설치 · 세척 · 수리</span></a><div class="nav-links"><a href="#education">교육 안내</a><a href="#gallery">현장 사진</a><a href="#notice">공지사항</a><a href="#contact">상담 문의</a></div></div></nav>
 
     <header>
         <p>LG전자 협력사 | 창우전자</p>
         <h1>에어컨·보일러 기술교육생 모집</h1>
         <div class="subtitle">초보자도 도전할 수 있습니다! 기술을 배워 새로운 미래를 준비하세요.</div>
-    </header>
+    <a class="hero-link" href="#education">교육 과정 살펴보기 →</a><a class="hero-link secondary" href="tel:01081470322">전화 상담하기</a></header>
 
     <div class="container">
         
@@ -187,7 +190,7 @@
             </ul>
         </section>
 
-        <section>
+        <section id="education">
             <h2>교육 내용</h2>
             <ul class="education-list">
                 <li><span>1단계</span> 기초 이론 및 기본 기술 습득</li>
@@ -219,7 +222,21 @@
             </div>
         </section>
 
-        <section>
+        
+<section id="gallery"><h2>교육과 작업 현장</h2><p class="section-note">설치·세척·수리 기술을 배우는 현장을 소개합니다. 실제 현장 사진은 준비 중입니다.</p><div class="gallery">
+<!-- 실제 사진을 올린 뒤 아래 photo-slot 안의 내용을 <img src="images/installation.jpg" alt="에어컨 설치 교육 현장" loading="lazy"> 등으로 교체하세요. -->
+<figure><div class="photo-slot"><b aria-hidden="true">＋</b><span>현장 사진 준비 중</span></div><figcaption>에어컨 설치<small>설치 분야 실무 교육</small></figcaption></figure>
+<figure><div class="photo-slot"><b aria-hidden="true">＋</b><span>현장 사진 준비 중</span></div><figcaption>에어컨 세척<small>세척 분야 실무 교육</small></figcaption></figure>
+<figure><div class="photo-slot"><b aria-hidden="true">＋</b><span>현장 사진 준비 중</span></div><figcaption>점검과 수리<small>수리 분야 실무 교육</small></figcaption></figure></div></section>
+<section id="notice"><h2>공지사항</h2><p class="section-note">제목을 누르면 자세한 내용을 확인할 수 있습니다.</p>
+<!-- 공지를 추가하려면 아래 details 요소를 복사해 제목과 내용을 수정하세요. -->
+<details><summary><span class="pill">교육 안내</span>에어컨·보일러 기술교육 상담 안내</summary><p>초보자, 직업 전환 준비자, 취업 및 창업 희망자를 대상으로 교육 상담을 진행합니다. 교육비와 참여 조건은 상담 후 안내합니다.</p><a href="tel:01081470322">010-8147-0322로 상담하기 →</a></details>
+<details><summary><span class="pill">이용 안내</span>교육 장소와 기간 안내</summary><p>기본 교육은 30일이며 이후 능력에 따라 추가 실무를 진행합니다. 교육장은 경기도 남양주시 또는 안산에 있습니다. 참여 전 상담을 통해 상세 내용을 확인해 주세요.</p></details></section>
+<section id="faq"><h2>자주 묻는 질문</h2>
+<details><summary>처음 배우는 사람도 참여할 수 있나요?</summary><p>네. 모집 대상에는 에어컨·보일러 관련 기술을 처음 배우는 초보자도 포함됩니다. 기초 이론과 기본 기술부터 단계별로 교육합니다.</p></details>
+<details><summary>교육비와 교육 이후 근무 조건은 어떻게 되나요?</summary><p>교육비는 상담 후 안내하며, 교육 이후 근무와 보수는 별도 협의합니다. 일자리와 숙식 지원은 조건에 따라 지원하거나 안내합니다.</p></details>
+<details><summary>교육을 마치면 취업이 보장되나요?</summary><p>취업·프리랜서·창업 관련 맞춤형 지원을 안내하지만, 교육 수료가 취업이나 협력사 활동을 보장하지는 않습니다. LG전자 협력 기사 활동을 희망하는 경우 별도 상담이 필요합니다.</p></details></section>
+<section id="contact">
             <h2>회사 안내 및 문의</h2>
             <div class="contact-box">
                 <p><strong>상담 및 접수처:</strong> 창우전자</p>
@@ -228,7 +245,7 @@
                 <p style="font-size:0.95rem; color:#666;">주소: 경기도 남양주시 별내면 광전리 89-3</p>
                 
                 <!-- 모바일에서 클릭 시 바로 전화걸기 기능 -->
-                <a href="tel:010-8147-0322" class="btn-call">지금 바로 전화 문의하기</a>
+                <a href="tel:010-8147-0322" class="btn-call">지금 바로 전화 문의하기</a><div class="contact-actions"><a href="mailto:changwoo2021@naver.com?subject=창우전자%20교육%20상담%20문의">이메일 문의</a><a href="tel:029077777">대표번호 전화</a></div>
             </div>
         </section>
 
@@ -238,5 +255,6 @@
         <p>© 창우전자. All Rights Reserved. 본 교육 수료가 취업이나 협력사 활동을 보장하는 것은 아닙니다.</p>
     </footer>
 
+<a class="to-top" href="#top" aria-label="페이지 맨 위로 이동">↑ 맨 위로</a>
 </body>
 </html>
