@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>창우전자 - 에어컨/보일러 기술교육생 모집</title>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #f8f9fa;
+            --text-color: #333;
+            --accent-color: #e63946;
+        }
+        
+        body {
+            font-family: 'Malgun Gothic', dotum, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 0 0 10px 0;
+            color: #ffdd57;
+            font-weight: bold;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin: 0;
+            letter-spacing: -1px;
+        }
+
+        header .subtitle {
+            margin-top: 15px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 35px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-left: 5px solid var(--primary-color);
+            padding-left: 10px;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+        }
+
+        li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .education-list li::before {
+            content: none;
+        }
+        .education-list li {
+            padding-left: 0;
+            background: var(--secondary-color);
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .education-list span {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-right: 10px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .info-box {
+            background-color: var(--secondary-color);
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .info-box strong {
+            display: inline-block;
+            width: 90px;
+            color: #555;
+        }
+
+        .contact-box {
+            background-color: #e9f2fe;
+            border: 2px dashed var(--primary-color);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .contact-box p {
+            margin: 8px 0;
+            font-size: 1.1rem;
+        }
+
+        .btn-call {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            margin-top: 15px;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <p>LG전자 협력사 | 창우전자</p>
+        <h1>에어컨·보일러 기술교육생 모집</h1>
+        <div class="subtitle">초보자도 도전할 수 있습니다! 기술을 배워 새로운 미래를 준비하세요.</div>
+    </header>
+
+    <div class="container">
+        
+        <section>
+            <h2>모집 대상</h2>
+            <ul>
+                <li>전문 기술을 배워 취업하고 싶으신 분</li>
+                <li>새로운 기술로 직업 전환을 준비하시는 분</li>
+                <li>프리랜서 활동이나 독립 창업을 희망하시는 분</li>
+                <li>관련 학원 수료 후 실무 능력을 보완하고 싶으신 분</li>
+                <li>에어컨 및 보일러 관련 기술을 처음 배우는 초보자</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>교육 내용</h2>
+            <ul class="education-list">
+                <li><span>1단계</span> 기초 이론 및 기본 기술 습득</li>
+                <li><span>2단계</span> 실제 업무에 필요한 작업 기술 교육</li>
+                <li><span>3단계</span> 설치·세척·수리 분야별 실무 교육</li>
+                <li><span>4단계</span> 교육 이후 업무 수행 능력 향상을 위한 보수 교육</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>교육 안내 및 조건</h2>
+            <div class="info-grid">
+                <div class="info-box">
+                    <strong>기간/장소</strong>
+                    <p style="margin:5px 0 0 0;">기본 교육 30일 (이후 능력에 따라 추가 실무 진행)<br>📍 경기도 남양주시 또는 안산 교육장</p>
+                </div>
+                <div class="info-box">
+                    <strong>교육비</strong>
+                    <p style="margin:5px 0 0 0;">상담 후 안내</p>
+                </div>
+                <div class="info-box">
+                    <strong>근무/보수</strong>
+                    <p style="margin:5px 0 0 0;">교육 후 별도 협의 (일자리 및 숙식 지원은 조건에 따라 지원/안내)</p>
+                </div>
+                <div class="info-box">
+                    <strong>진로 지원</strong>
+                    <p style="margin:5px 0 0 0;">취업, 프리랜서, 창업 맞춤형 지원<br>※ LG전자 협력 기사 활동 희망 시 별도 상담</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>회사 안내 및 문의</h2>
+            <div class="contact-box">
+                <p><strong>상담 및 접수처:</strong> 창우전자</p>
+                <p><strong>전화번호:</strong> 010-8147-0322 / 02-907-7777</p>
+                <p><strong>이메일:</strong> changwoo2021@naver.com</p>
+                <p style="font-size:0.95rem; color:#666;">주소: 경기도 남양주시 별내면 광전리 89-3</p>
+                
+                <!-- 모바일에서 클릭 시 바로 전화걸기 기능 -->
+                <a href="tel:010-8147-0322" class="btn-call">지금 바로 전화 문의하기</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 창우전자. All Rights Reserved. 본 교육 수료가 취업이나 협력사 활동을 보장하는 것은 아닙니다.</p>
+    </footer>
+
+</body>
+</html>
